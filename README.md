@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/DevDan21/clipboard-landing-page.git)
+- Live Site URL: [ClipboardLandingPage](https://devdan21.github.io/clipboard-landing-page/)
 
 ## My process
 
