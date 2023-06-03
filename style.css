@@ -1,0 +1,469 @@
+:root {
+  /* _____________________________________________
+
+  Variables/custom classes
+  _____________________________________________ */
+
+  /* ____________________
+
+  Fonts
+  _______________________\ */
+
+  --fs-h1-lrg: 2.875rem;
+  --fs-h1-sm: 2rem;
+  --fs-h2-lrg: 2.25rem;
+  --fs-h2-sm: 1.75rem;
+  --fs-h3-lrg: 1.5rem;
+  --fs-p-head-lrg: 1.25rem;
+  --fs-p-head-sm: 1rem;
+  --fs-p-body-lrg: 1.125rem;
+  --fs-p-body-sm: 1rem;
+  --fs-btn: 1.125rem;
+
+  --fw-400: 400;
+  --fw-600: 600;
+
+  --ff-primary: "Bai Jamjuree", sans-serif;
+
+  /* ____________________
+
+  Colors
+  _______________________\ */
+
+  --fc-heading: #4c545c;
+  --fc-body: #9eabb2;
+  --fc-btn-primary: #26bba4;
+  --fc-btn-secondary: #6174ff;
+  --fc-footer: #979797;
+
+  /* ____________________\
+
+  Spacing
+  _______________________\ */
+
+  --section-lrg: 0 10rem;
+  --section-sm: 0 2rem;
+}
+
+/* _____________________________________________
+
+  Reset
+  _____________________________________________ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* _____________________________________________
+
+  General Styling
+  _____________________________________________ */
+
+body {
+  background-image: url("images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-600);
+  color: var(--fc-heading);
+}
+
+p {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-p-body-lrg);
+  color: var(--fc-body);
+}
+
+h1 {
+  font-size: var(--fs-h1-lrg);
+}
+
+h2 {
+  font-size: var(--fs-h2-lrg);
+}
+
+h3 {
+  font-size: var(--fs-h3-lrg);
+}
+
+a {
+  font-family: var(--ff-primary);
+  font-size: var(--fc-body);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 1440px;
+  text-align: center;
+  margin: 0 10rem;
+}
+
+/* ____________________\
+
+  Spacing (margin/padding)
+  _______________________\ */
+
+.hero img,
+li {
+  margin-bottom: 56px;
+  list-style: none;
+}
+
+.hero img {
+  margin-top: 128px;
+}
+
+.hero p,
+.cta p {
+  margin-bottom: 48px;
+}
+
+.hero-button,
+.snippets,
+.workflow,
+.access,
+.clients,
+.cta {
+  margin-bottom: 150px;
+}
+
+h1,
+.workflow h3 {
+  margin-bottom: 16px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.snippets h3 {
+  margin-bottom: 8px;
+}
+
+.snippet-text {
+  padding-top: 50px;
+}
+
+.snippets p {
+  margin-bottom: 80px;
+}
+
+.access p {
+  margin-bottom: 110px;
+}
+
+.workflow p {
+  margin-bottom: 72px;
+}
+
+.workflow img {
+  margin-bottom: 40px;
+}
+
+/* ____________________\
+
+  Buttons
+  _______________________\ */
+
+.primary-btn,
+.secondary-btn {
+  width: 227px;
+  height: 56px;
+  text-decoration: none;
+  border: none;
+  border-radius: 28px;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-btn);
+  font-weight: var(--fw-600);
+  color: #fff;
+}
+
+.primary-btn {
+  margin-right: 16px;
+  background-color: var(--fc-btn-primary);
+  box-shadow: rgba(38, 187, 164, 0.5) 0px 10px 20px,
+    rgba(0, 0, 0, 0.05) 0px 6px 6px;
+
+  border-bottom: #1f9b88 4px solid;
+}
+
+.secondary-btn {
+  background-color: var(--fc-btn-secondary);
+  box-shadow: rgba(97, 116, 255, 0.5) 0px 10px 20px,
+    rgba(0, 0, 0, 0.05) 0px 6px 6px;
+  border-bottom: #4856be 4px solid;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+/* ____________________\
+
+  Text p - max-widths
+  _______________________\ */
+
+.hero p,
+.snippets p,
+.snippet-col h3,
+.access p,
+.workflow p,
+.cta p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero p {
+  max-width: 650px;
+}
+
+.snippets p {
+  max-width: 700px;
+}
+
+.snippet-col p,
+.snippet-col h3 {
+  max-width: 400px;
+  text-align: left;
+}
+
+.access p {
+  max-width: 700px;
+}
+
+.workflow p {
+  max-width: 400px;
+}
+
+.cta p {
+  max-width: 700px;
+}
+
+/* ____________________\
+
+  Flex/Grid items
+_______________________\ */
+
+.snippet-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.workflow-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: #ececec;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* ____________________\
+
+  Footer styling
+_______________________\ */
+
+footer {
+  padding: 50px;
+}
+
+.col a {
+  text-decoration: none;
+  color: var(--fc-footer);
+  padding-bottom: 10px;
+  color: var(--fc-heading);
+}
+
+.col a:hover {
+  cursor: pointer;
+  color: var(--fc-btn-primary);
+}
+
+footer img {
+  max-width: 20%;
+}
+
+i {
+  color: var(--fc-heading);
+  padding-right: 20px;
+}
+
+i:hover {
+  cursor: pointer;
+  color: var(--fc-btn-primary);
+}
+
+/* ____________________\
+
+  Extra styling/finishing touches
+_______________________\ */
+
+.snippets img {
+  transform: translateX(-200px);
+  max-width: 140%;
+  height: auto;
+}
+
+/* _____________________________________________
+
+  Media Queries
+  _____________________________________________ */
+
+@media all and (max-width: 768px) {
+  /* _____________________________________________
+
+  General Styling mobile)
+  _____________________________________________ */
+
+  body {
+    background-image: url("images/bg-header-mobile.png");
+  }
+
+  p {
+    font-size: var(--fs-p-body-sm);
+  }
+
+  h1 {
+    font-size: var(--fs-h1-sm);
+  }
+
+  h2 {
+    font-size: var(--fs-h2-sm);
+  }
+
+  section {
+    margin: 0 2rem;
+  }
+
+  /* ____________________\
+
+  Flex/Grid items (mobile)
+_______________________\ */
+
+  .hero-button {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .snippet-col,
+  .workflow-features,
+  .clients,
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  .clients {
+    gap: 60px;
+  }
+
+  /* ____________________\
+
+  Spacing (margin/padding) (mobile)
+  _______________________\ */
+
+  .hero img,
+  li {
+    margin-bottom: 56px;
+    list-style: none;
+  }
+
+  .hero img {
+    margin-top: 120px;
+  }
+
+  .hero p,
+  footer img {
+    margin-bottom: 40px;
+  }
+
+  .hero-button {
+    margin-bottom: 160px;
+  }
+
+  .primary-btn {
+    margin-right: 0px;
+  }
+
+  .snippets p,
+  .access p {
+    margin-bottom: 64px;
+  }
+
+  .workflow {
+    margin-bottom: 0px;
+  }
+
+  .access,
+  .workflow {
+    margin-bottom: 130px;
+  }
+
+  .col-social {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  footer a {
+    margin-bottom: 10px;
+  }
+
+  /* ____________________\
+
+  Extra styling/finishing touches
+_______________________\ */
+
+  .snippets img {
+    width: 100%;
+    height: auto;
+    transform: translateY(0);
+  }
+
+  .snippet-col p,
+  .snippet-col h3 {
+    text-align: center;
+  }
+
+  footer a {
+    text-align: center;
+  }
+
+  footer img {
+    max-width: 20%;
+  }
+}
